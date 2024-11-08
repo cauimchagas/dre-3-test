@@ -2,9 +2,10 @@ from airflow.decorators import dag
 from airflow.operators.smooth import SmoothOperator
 from datetime import datetime
 
-@dag(    
-    start_date=datetime.now(),
+
+@dag(
     schedule=None,
+    start_date=datetime(2024, 11, 9),
     catchup=False,
     tags=["smooth"],
 )
