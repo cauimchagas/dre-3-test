@@ -5,11 +5,11 @@ from datetime import datetime
 
 @dag(
     schedule=None,
-    start_date=datetime(2023, 1, 1),
+    start_date=datetime(2024, 11, 9),
     catchup=False,
     tags=["smooth"],
 )
-def smooth()
+def smooth():
     video = SmoothOperator(
         task_id="youtube_video"
     )
